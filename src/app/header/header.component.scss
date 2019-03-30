@@ -1,0 +1,50 @@
+$searchPadding:30px;
+.c-contact-header {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  .c-search {
+    padding-left: $searchPadding;
+    span {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: $searchPadding;
+      height: $searchPadding;
+      line-height: $searchPadding;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+    }
+  }
+  .c-profile{
+    display: flex;
+    align-items: center;
+    .c-name{
+      margin: 0 15px;
+    }
+    .c-photo{
+      display: flex;
+      align-items: center;
+      ul{
+        padding: 8px;
+        a{
+          color: #686766;
+          text-decoration: none;
+        }
+      }
+    }
+    .c-image{
+      width: 100px;
+    }
+  }
+}
+//mobile devices
+@media only screen and (max-width: 768px){
+  .c-image{
+    display: none;
+  }
+}

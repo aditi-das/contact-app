@@ -1,0 +1,18 @@
+.c-contact-item{
+  border-bottom: 1px solid #686766;
+  &:hover{
+    cursor: pointer;
+    background: #edeff3;
+  }
+  a {
+    text-decoration: none;
+    padding: 30px 10px;
+    display: block;
+    color: #686766;
+  }
+  .c-active-contact{
+    color: #008ab3;
+    background: #edeff3;
+    border-right: 2px solid #008ab3;
+  }
+}

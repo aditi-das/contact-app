@@ -1,0 +1,45 @@
+.c-contact-details{
+  height: 100%;
+  display: grid;
+  padding: 20px 50px 20px 50px;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow-y: auto;
+  .c-profile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    .c-photo{
+      margin-right: 20px;
+      .c-image{
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .c-message{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .c-msg-button{
+        align-self: center;
+      }
+    }
+
+
+  }
+  .c-padding{
+    padding: 10px;
+  }
+}
+//mobile devices
+@media only screen and (max-width: 768px){
+  .c-contact-details{
+    padding: 0;
+    .c-profile{
+      grid-template-rowss: 1fr 1fr;
+      grid-template-columns: none;
+      .c-photo{
+        margin:0 0 10px 0;
+      }
+    }
+  }
+
+}

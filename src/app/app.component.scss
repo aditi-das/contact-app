@@ -1,0 +1,28 @@
+$headerHeight: 100px;
+$sidebarWidth: 200px;
+.c-contact-app{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .c-header{
+    display: flex;
+    flex-direction: column;
+    height: $headerHeight;
+    background-color: #008ab3;
+    width: 100%;
+  }
+  .c-body{
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - #{$headerHeight});
+    .c-sidebar{
+      width: $sidebarWidth;
+      border-right: 1px solid #686766;
+      background: #fff;
+      overflow-y: auto;
+    }
+    .c-content{
+      width: calc(100% - #{$sidebarWidth});
+    }
+  }
+}

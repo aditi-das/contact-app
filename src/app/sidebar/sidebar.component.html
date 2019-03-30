@@ -1,0 +1,5 @@
+<div class="c-contact-list">
+  <div *ngFor="let contact of contactList" class="c-contact-item" >
+    <a [routerLink]="contact.name" routerLinkActive="c-active-contact">{{contact.name}}</a>
+  </div>
+</div>
