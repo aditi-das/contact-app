@@ -8,7 +8,7 @@ The UI consists of:
   the login user and profile photo.
 - The left side bar which consists of a list of full names of contacts.
 - The right main panel which consists of the details about the selected contact. 
-  The details include the selected contact photo, a button to send a message(not completed), 
+  The details include the selected contact photo, a button to send a message, 
   rating (number of hearts with a max of 5)(not yet implemented), a description of the contact. 
   A table of likes and dislikes.
 
