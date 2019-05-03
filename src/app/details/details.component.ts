@@ -31,7 +31,7 @@ export class DetailsComponent implements OnInit {
     const contactList$ = this.contactService.getContactListObservable();
     const result$ = combineLatest(params$, contactList$);
     result$.subscribe(result => {
-      console.log(result);
+      // console.log(result);
       const contactName = result[0].name;
       this.contactList = result[1] || this.contactList;
       const contactData = this.contactList.find((contact) => contact.name === contactName);

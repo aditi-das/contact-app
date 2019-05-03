@@ -19,7 +19,7 @@ export class ContactService {
   }
 
   setContactListObservable(data: ContactModel[]) {
-    console.log('data is set');
+    // console.log('data is set');
     this.contactList = data;
     this._contactListObservable.next(data);
   }
